@@ -19,6 +19,16 @@ _GitHub Copilot can help you code by offering autocomplete-style suggestions rig
 
 </header>
 
+## واجهة بورصة العملات الرقمية
+
+لمعاينة الواجهة العربية لبورصة العملات الرقمية، افتح الملف `index.html` مباشرة في المتصفح أو شغّل خادماً محلياً بسيطاً:
+
+```bash
+python -m http.server 8000
+```
+
+ثم زر `http://127.0.0.1:8000/` لعرض الصفحة.
+
 <!--
   <<< Author notes: Step 1 >>>
   Choose 3-5 steps for your course.

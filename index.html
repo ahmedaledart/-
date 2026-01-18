@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أسعار صرف العملات مقابل الدينار الليبي</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="brand-row">
+        <div class="brand-logo">TDC</div>
+        <div class="brand-center">
+          <div class="brand-mark">LTN</div>
+          <span>شبكة ليبيا للتجارة</span>
+        </div>
+        <div class="brand-seal">غرفة التجارة</div>
+      </div>
+      <h1>أسعار صرف العملات مقابل الدينار الليبي</h1>
+    </header>
+
+    <main>
+      <section id="markets" class="section">
+        <div class="section-header">
+          <div>
+            <h2>جدول الأسعار</h2>
+            <p>بيانات توضيحية لمحاكاة شاشة أسعار السوق الموازي.</p>
+          </div>
+          <div class="controls">
+            <input id="rateSearch" type="search" placeholder="ابحث عن عملة..." />
+            <button id="refreshRates" class="ghost">تحديث الأسعار</button>
+          </div>
+        </div>
+        <div class="market-table" id="rateTable">
+          <div class="table-row head">
+            <span>#</span>
+            <span>الرمز</span>
+            <span>الاسم</span>
+            <span>البيع</span>
+            <span>الشراء</span>
+            <span>الحالة</span>
+            <span>الشعار</span>
+          </div>
+          <div class="table-row rate-row" data-code="USD">
+            <span>1</span>
+            <span>USD</span>
+            <span>دولار أمريكي</span>
+            <span class="ask">4.84</span>
+            <span class="bid">4.80</span>
+            <span class="trend up">▲</span>
+            <span class="flag">🇺🇸</span>
+          </div>
+          <div class="table-row rate-row" data-code="EUR">
+            <span>2</span>
+            <span>EUR</span>
+            <span>يورو</span>
+            <span class="ask">5.18</span>
+            <span class="bid">5.12</span>
+            <span class="trend down">▼</span>
+            <span class="flag">🇪🇺</span>
+          </div>
+          <div class="table-row rate-row" data-code="GBP">
+            <span>3</span>
+            <span>GBP</span>
+            <span>جنيه إسترليني</span>
+            <span class="ask">6.05</span>
+            <span class="bid">5.98</span>
+            <span class="trend down">▼</span>
+            <span class="flag">🇬🇧</span>
+          </div>
+          <div class="table-row rate-row" data-code="TND">
+            <span>4</span>
+            <span>TND</span>
+            <span>دينار تونسي</span>
+            <span class="ask">1.53</span>
+            <span class="bid">1.51</span>
+            <span class="trend stable">—</span>
+            <span class="flag">🇹🇳</span>
+          </div>
+          <div class="table-row rate-row" data-code="SAR">
+            <span>5</span>
+            <span>SAR</span>
+            <span>ريال سعودي</span>
+            <span class="ask">1.29</span>
+            <span class="bid">1.27</span>
+            <span class="trend up">▲</span>
+            <span class="flag">🇸🇦</span>
+          </div>
+          <div class="table-row rate-row" data-code="AED">
+            <span>6</span>
+            <span>AED</span>
+            <span>درهم إماراتي</span>
+            <span class="ask">1.32</span>
+            <span class="bid">1.30</span>
+            <span class="trend down">▼</span>
+            <span class="flag">🇦🇪</span>
+          </div>
+          <div class="table-row rate-row" data-code="CNY">
+            <span>7</span>
+            <span>CNY</span>
+            <span>يوان صيني</span>
+            <span class="ask">0.68</span>
+            <span class="bid">0.66</span>
+            <span class="trend up">▲</span>
+            <span class="flag">🇨🇳</span>
+          </div>
+          <div class="table-row rate-row" data-code="EGP">
+            <span>8</span>
+            <span>EGP</span>
+            <span>جنيه مصري</span>
+            <span class="ask">0.16</span>
+            <span class="bid">0.15</span>
+            <span class="trend down">▼</span>
+            <span class="flag">🇪🇬</span>
+          </div>
+          <div class="table-row rate-row" data-code="JOD">
+            <span>9</span>
+            <span>JOD</span>
+            <span>دينار أردني</span>
+            <span class="ask">6.84</span>
+            <span class="bid">6.75</span>
+            <span class="trend stable">—</span>
+            <span class="flag">🇯🇴</span>
+          </div>
+        </div>
+        <div class="table-footer">
+          <span>هذه البيانات تعبر عن الأسعار في السوق الموازي.</span>
+          <span class="date">December 15, 2025</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Libya Trade Net</span>
+      <span>تحديث مباشر لأسعار الصرف</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
