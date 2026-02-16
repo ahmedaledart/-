@@ -1,0 +1,29 @@
+{
+  "العملات": [
+    { "rank": 1, "currency": "الدولار الامريكي", "unit": "دولار واحد", "officialRate": 5.44, "parallelRate": 9.015 },
+    { "rank": 2, "currency": "اليورو", "unit": "يورو واحد", "officialRate": 6.33, "parallelRate": 10.4 },
+    { "rank": 3, "currency": "الجنيه الاسترليني", "unit": "جنيه واحد", "officialRate": 7.3, "parallelRate": 11.83 },
+    { "rank": 4, "currency": "الدرهم الاماراتي", "unit": "درهم واحد", "officialRate": 1.47, "parallelRate": 2.4 },
+    { "rank": 5, "currency": "الدينار التونسي", "unit": "دينار واحد", "officialRate": 1.88, "parallelRate": 2.97 },
+    { "rank": 6, "currency": "الليرة التركية", "unit": "ليرة واحدة", "officialRate": 0.13, "parallelRate": 0.208 },
+    { "rank": 7, "currency": "الدينار الإردني", "unit": "دينار واحد", "officialRate": 7.66, "parallelRate": 12.67 },
+    { "rank": 8, "currency": "الجنيه المصري", "unit": "جنيه واحد", "officialRate": 0.11, "parallelRate": 12.53 },
+    { "rank": 9, "currency": "الريال السعودي", "unit": "ريال واحد", "officialRate": 1.44, "parallelRate": 2.38 },
+    { "rank": 10, "currency": "الايوان الصيني", "unit": "ايوان واحد", "officialRate": 0.76, "parallelRate": 1.25 }
+  ],
+  "المعادن": [
+    { "asset": "الذهب (XAU)", "price": "$2,362", "change": 0.88, "volume": "$640M", "status": "مباشر" },
+    { "asset": "الفضة (XAG)", "price": "$30.12", "change": -0.44, "volume": "$320M", "status": "مراقبة" },
+    { "asset": "النحاس", "price": "$4.53", "change": 0.27, "volume": "$211M", "status": "مباشر" }
+  ],
+  "الخامات النفطية": [
+    { "asset": "نفط برنت", "price": "$81.14", "change": -1.04, "volume": "$1.2B", "status": "مراقبة" },
+    { "asset": "خام غرب تكساس", "price": "$77.95", "change": -0.66, "volume": "$1.1B", "status": "مباشر" },
+    { "asset": "زيت التدفئة", "price": "$2.47", "change": 0.12, "volume": "$410M", "status": "مباشر" }
+  ],
+  "السلع الأساسية": [
+    { "asset": "القمح", "price": "$6.28", "change": 0.93, "volume": "$180M", "status": "مباشر" },
+    { "asset": "الذرة", "price": "$4.42", "change": -0.22, "volume": "$165M", "status": "مراقبة" },
+    { "asset": "السكر الخام", "price": "$0.23", "change": 0.38, "volume": "$104M", "status": "مباشر" }
+  ]
+}

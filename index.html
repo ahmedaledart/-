@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>منصة بورصة العملات الرقمية</title>
+    <title>المنصة العالمية للاسعار - التسجيل</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,199 +13,34 @@
     />
   </head>
   <body>
-    <header class="hero">
-      <nav class="nav">
-        <div class="brand">
-          <span class="logo">⟠</span>
-          <span>بورصة ليرا</span>
-        </div>
-        <div class="nav-links">
-          <a href="#markets">الأسواق</a>
-          <a href="#features">المزايا</a>
-          <a href="#insights">التحليلات</a>
-          <button class="primary">ابدأ الآن</button>
-        </div>
-      </nav>
-      <div class="hero-content">
-        <div class="hero-text">
-          <span class="badge">تداول لحظي • سيولة مرتفعة</span>
-          <h1>منصة بورصة عملات رقمية بواجهة عربية حديثة.</h1>
-          <p>
-            راقب السوق، أنشئ تنبيهات السعر، واحصل على أفضل تجربة تداول مع أدوات احترافية
-            ولوحة تحكم مرنة.
-          </p>
-          <div class="hero-actions">
-            <button class="primary">افتح حساباً تجريبياً</button>
-            <button class="ghost">تحميل التطبيق</button>
-          </div>
-          <div class="stats">
-            <div>
-              <strong>+2,450</strong>
-              <span>زوج تداول</span>
-            </div>
-            <div>
-              <strong>$18.4B</strong>
-              <span>حجم تداول يومي</span>
-            </div>
-            <div>
-              <strong>99.98%</strong>
-              <span>جاهزية المنصة</span>
-            </div>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="card-header">
-            <h3>محفظتي</h3>
-            <span class="pill">تحديث مباشر</span>
-          </div>
-          <div class="balance">
-            <span>الرصيد الإجمالي</span>
-            <h2>$42,810.55</h2>
-          </div>
-          <div class="asset">
-            <div>
-              <span>BTC</span>
-              <strong>$18,234</strong>
-            </div>
-            <span class="trend up">+4.2%</span>
-          </div>
-          <div class="asset">
-            <div>
-              <span>ETH</span>
-              <strong>$12,980</strong>
-            </div>
-            <span class="trend down">-1.8%</span>
-          </div>
-          <div class="asset">
-            <div>
-              <span>USDT</span>
-              <strong>$6,410</strong>
-            </div>
-            <span class="trend up">+0.1%</span>
-          </div>
-          <button class="primary full">إدارة المحفظة</button>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section id="markets" class="section">
-        <div class="section-header">
+    <main class="auth-page">
+      <section class="auth-card">
+        <div class="brand auth-brand">
+          <img src="assets/ltn-logo.svg" alt="شعار شبكة ليبيا للتجارة" class="brand-logo" />
           <div>
-            <h2>الأسواق الأكثر نشاطاً</h2>
-            <p>متابعة لحظية لأسعار العملات وتغيراتها على مدار اليوم.</p>
-          </div>
-          <button class="ghost">عرض جميع الأسواق</button>
-        </div>
-        <div class="market-table">
-          <div class="table-row head">
-            <span>العملة</span>
-            <span>السعر</span>
-            <span>24h</span>
-            <span>الحجم</span>
-            <span>العمق</span>
-          </div>
-          <div class="table-row">
-            <span>Bitcoin (BTC)</span>
-            <span>$37,420</span>
-            <span class="trend up">+3.6%</span>
-            <span>$5.2B</span>
-            <span>
-              <div class="depth-bar"><div style="width: 78%"></div></div>
-            </span>
-          </div>
-          <div class="table-row">
-            <span>Ethereum (ETH)</span>
-            <span>$2,040</span>
-            <span class="trend up">+1.1%</span>
-            <span>$2.1B</span>
-            <span>
-              <div class="depth-bar"><div style="width: 65%"></div></div>
-            </span>
-          </div>
-          <div class="table-row">
-            <span>Solana (SOL)</span>
-            <span>$58.20</span>
-            <span class="trend down">-2.3%</span>
-            <span>$820M</span>
-            <span>
-              <div class="depth-bar"><div style="width: 52%"></div></div>
-            </span>
-          </div>
-          <div class="table-row">
-            <span>Ripple (XRP)</span>
-            <span>$0.66</span>
-            <span class="trend up">+5.4%</span>
-            <span>$640M</span>
-            <span>
-              <div class="depth-bar"><div style="width: 74%"></div></div>
-            </span>
+            <span class="brand-title">المنصة العالمية للاسعار</span>
+            <small>GLOBAL PRICES PLATFORM</small>
           </div>
         </div>
-      </section>
 
-      <section id="features" class="section features">
-        <div>
-          <h2>لماذا بورصة ليرا؟</h2>
-          <p>مجموعة أدوات متكاملة للتداول والتحليل وإدارة المخاطر.</p>
-        </div>
-        <div class="feature-grid">
-          <div class="feature-card">
-            <h3>أوامر ذكية</h3>
-            <p>نفذ أوامر محددة تلقائياً مع دعم وقف الخسارة وجني الأرباح.</p>
-          </div>
-          <div class="feature-card">
-            <h3>تنبيهات فورية</h3>
-            <p>إشعارات سعرية مخصصة عند مستويات الدعم والمقاومة.</p>
-          </div>
-          <div class="feature-card">
-            <h3>محفظة آمنة</h3>
-            <p>حماية متعددة الطبقات وتخزين بارد للأصول طويلة الأجل.</p>
-          </div>
-          <div class="feature-card">
-            <h3>تحليلات متقدمة</h3>
-            <p>مؤشرات فنية وتقارير أداء يومية للمحفظة.</p>
-          </div>
-        </div>
-      </section>
+        <h1>مرحبًا بك</h1>
+        <p class="auth-subtitle">سجل الدخول للمنصة عبر البريد الإلكتروني أو حساباتك السريعة.</p>
 
-      <section id="insights" class="section insights">
-        <div>
-          <h2>لوحة التحليلات</h2>
-          <p>نظرة شاملة على الاتجاهات مع مؤشرات السيولة والتقلب.</p>
+        <form class="auth-form" action="#" method="post">
+          <label for="email">البريد الإلكتروني</label>
+          <input id="email" type="email" placeholder="name@example.com" />
+          <button type="submit" class="primary full">تسجيل بالبريد الإلكتروني</button>
+        </form>
+
+        <div class="auth-divider"><span>أو</span></div>
+
+        <div class="social-buttons">
+          <button class="ghost social google" type="button">التسجيل عبر Google</button>
+          <button class="ghost social apple" type="button">التسجيل عبر Apple ID</button>
         </div>
-        <div class="insight-grid">
-          <div class="insight-card">
-            <h4>اتجاه السوق</h4>
-            <div class="sparkline" data-values="12,30,18,45,32,58,49"></div>
-            <span class="trend up">صاعد على المدى القصير</span>
-          </div>
-          <div class="insight-card">
-            <h4>سيولة المنصة</h4>
-            <div class="sparkline" data-values="40,38,42,46,53,60,62"></div>
-            <span class="trend up">تحسن مستمر</span>
-          </div>
-          <div class="insight-card">
-            <h4>تقلبات عالية</h4>
-            <div class="sparkline" data-values="22,28,36,26,40,33,48"></div>
-            <span class="trend down">يلزم إدارة المخاطر</span>
-          </div>
-        </div>
+
+        <a href="dashboard.html" class="dashboard-link">الانتقال إلى لوحة التحكم (رابط مفصول)</a>
       </section>
     </main>
-
-    <footer class="footer">
-      <div>
-        <strong>بورصة ليرا</strong>
-        <p>واجهة عربية لأسواق العملات الرقمية.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#">مركز المساعدة</a>
-        <a href="#">سياسة الخصوصية</a>
-        <a href="#">الشروط والأحكام</a>
-      </div>
-    </footer>
-
-    <script src="app.js"></script>
   </body>
 </html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>المنصة العالمية للاسعار - لوحة التحكم</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">
+          <img src="assets/ltn-logo.svg" alt="شعار شبكة ليبيا للتجارة" class="brand-logo" />
+          <div>
+            <span class="brand-title">المنصة العالمية للاسعار</span>
+            <small>GLOBAL PRICES PLATFORM</small>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#dashboard">لوحة التحكم</a>
+          <a href="#market-screen">شاشة العرض</a>
+          <a href="#sectors">القطاعات</a>
+          <a href="index.html" class="ghost">تسجيل/منصة الدخول</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="badge">لوحة تحكم مستقلة</span>
+          <h1>إدارة الأسواق من رابط منفصل.</h1>
+          <p>
+            هذه الصفحة مستقلة عن صفحة التسجيل، وتعرض بيانات الأسواق مباشرة من API مع تحديث دوري.
+          </p>
+        </div>
+
+        <div class="quick-panel">
+          <h3>ملخص الجلسة</h3>
+          <p class="api-meta">
+            مصدر API: <code id="apiSource">-</code> • الحالة: <strong id="apiState">-</strong>
+          </p>
+          <p class="api-meta">آخر تحديث: <strong id="apiUpdatedAt">-</strong></p>
+          <div class="mini-grid">
+            <div>
+              <span>الأصول النشطة</span>
+              <strong id="activeAssets">0</strong>
+            </div>
+            <div>
+              <span>نسبة التغير</span>
+              <strong id="winnersRatio">0%</strong>
+            </div>
+            <div>
+              <span>إجمالي القياس</span>
+              <strong id="totalVolume">0</strong>
+            </div>
+            <div>
+              <span>التقلب</span>
+              <strong id="volatility">0%</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="dashboard" class="section">
+        <div class="section-header">
+          <div>
+            <h2>لوحة التحكم</h2>
+            <p>واجهة إشراف على الأسعار، المخاطر، والتنبيهات اللحظية.</p>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel">
+            <h3>مؤشرات الحساب</h3>
+            <div class="kpis">
+              <div class="kpi">
+                <span>إجمالي المحفظة</span>
+                <strong>$248,420</strong>
+              </div>
+              <div class="kpi">
+                <span>الهامش المستخدم</span>
+                <strong>34%</strong>
+              </div>
+              <div class="kpi">
+                <span>الربح/الخسارة اليومي</span>
+                <strong class="up">+$6,810</strong>
+              </div>
+              <div class="kpi">
+                <span>الأوامر المفتوحة</span>
+                <strong>17</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <h3>التنبيهات السريعة</h3>
+            <ul class="alerts">
+              <li><span class="dot up"></span> الذهب اخترق مستوى 2,360$</li>
+              <li><span class="dot down"></span> برنت تراجع 1.4% خلال ساعة</li>
+              <li><span class="dot up"></span> مؤشر الدولار ارتفع إلى 104.6</li>
+              <li><span class="dot up"></span> القمح يسجل أعلى سعر أسبوعي</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="market-screen" class="section market-screen">
+        <div class="section-header">
+          <div>
+            <h2>شاشة عرض المنصة</h2>
+            <p>سوق مباشر مع تصفية حسب القطاع المعتمد.</p>
+          </div>
+        </div>
+
+        <div id="sectors" class="sector-tabs" role="tablist" aria-label="قطاعات السوق"></div>
+
+        <div class="market-table" aria-live="polite">
+          <div id="tableHead" class="table-row head"></div>
+          <div id="marketRows"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 المنصة العالمية للاسعار - جميع الحقوق محفوظة.</p>
+      <div class="footer-links">
+        <a href="#">الدعم</a>
+        <a href="#">الخصوصية</a>
+        <a href="#">شروط الاستخدام</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
